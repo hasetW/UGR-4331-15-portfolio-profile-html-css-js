@@ -49,9 +49,9 @@ header {
     cursor: pointer;
     transition: all ease;
 }
-.nav-toggle:hover {
+/* .nav-toggle:hover {
     transform: rotate(360deg);
-}
+} */
 .links {
     display: none;
     flex-direction: row;

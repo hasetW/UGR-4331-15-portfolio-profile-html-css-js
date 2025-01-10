@@ -47,9 +47,6 @@ button{
     color: var(--textColor);
     text-transform: capitalize;
 }
-button:hover{
-    background-color: var(--iconColor);
-}
 .social-icons{
     display: grid;
     grid-template-columns:1fr;
