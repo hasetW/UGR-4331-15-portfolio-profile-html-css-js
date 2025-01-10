@@ -1,0 +1,112 @@
+:root{
+    /* colors */
+    --artBtnColor:#7D70D4;
+    --iconColor:#705FE3;
+    --bgColor:#BDB7E9;
+    --textColor: #EEECF7;
+    /* font-siza */
+    --header1Size:40px;
+    --header2Size:32px;
+    --header4Size:24px;
+    --pTextSiza:20px;
+    --smallText:16px;
+    --lineHeight:32px;
+}
+.contact{
+    display: block;
+    text-align: center;
+}
+.form{
+   width:250px;
+   height: 300px;
+   background-color: var(--artBtnColor);
+   display: block;
+   padding: 20px;
+   border-radius: 20px;
+   align-items: center;
+   margin: auto;
+   
+}
+input{
+    background-color: var(--textColor);
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: none;
+}
+#message{
+    height: 120px;
+}
+button{
+    background-color: #9487EA;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    color: var(--textColor);
+    text-transform: capitalize;
+}
+button:hover{
+    background-color: var(--iconColor);
+}
+.social-icons{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr  ;
+    
+}
+.social-icons i{
+    font-size:  2rem;
+    color: var(--iconColor);
+}
+/* Mobile Landscape */
+@media   (max-width:500px) and (min-height: 400px) and (orientation: landscape){
+    .social-icons{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr   ;
+    }
+    #tg{
+        grid-column: 1; 
+        grid-row: 1; 
+        align-items: center;
+    }
+    #ig{
+        grid-column: 1; 
+        grid-row: 2; 
+        align-items: center;
+    }
+    #link{
+        grid-column: 2; 
+        grid-row: 1; 
+        align-items: center;
+    }
+    #git{
+        grid-column: 2; 
+        grid-row: 2; 
+        align-items: center;
+    }
+}
+/* tablet portraite */
+@media  (min-width: 500px) and  (max-width: 850px){
+    .social-icons{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr;
+    }
+}
+/* desktop */
+@media (min-width: 850px){
+    .contact{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 50px;
+    }
+    .social-icons{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr;
+        padding: auto;
+    }
+}

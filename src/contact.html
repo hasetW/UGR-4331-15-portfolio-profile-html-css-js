@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portoflio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/contact.css">
+   
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="nav">
             <div class="nav-header">
                 <h2>Haset Wendesen</h2>
                 <button class="nav-toggle">
@@ -33,25 +35,28 @@
                 
             </div>
             <form action="submit">
-                <input type="text" name="Email" id="Email" placeholder="Email" required>
-                <input type="text" name="message" id="message" placeholder="Enter your message">
-                <button class="submit"> submit</button>
+                <div class="form">
+                    <input type="text" name="Email" id="Email" placeholder="Email@" required>
+                    <input type="text" name="message" id="message" placeholder="Enter your message">
+                    <button class="submit"> submit</button>
+                </div>
+               
             </form>
         </section>
     </main>
     <footer>
         <h4>contact </h4>
         <div class="social-icons">
-            <a href="https://web.telegram.org/a/">
+            <a href="https://web.telegram.org/a/" id="tg">
                 <i class='bx bxl-telegram'></i>
             </a>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.instagram.com/" id="ig">
                 <i class='bx bxl-instagram'></i>
             </a>
-            <a href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.bing.com%2F">
+            <a href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.bing.com%2F" id="link">
                 <i class='bx bxl-linkedin'></i>
             </a>
-            <a href="https://github.com/hasetW">
+            <a href="https://github.com/hasetW" id="git">
                 <i class='bx bxl-github'></i>
             </a>
         </div>
@@ -59,6 +64,7 @@
 
 
     </footer>
+    <script src="js/script.js"></script>
    
 </body>
 </html>

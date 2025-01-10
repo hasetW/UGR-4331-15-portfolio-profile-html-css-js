@@ -1,0 +1,131 @@
+:root{
+    /* colors */
+    --artBtnColor:#7D70D4;
+    --iconColor:#705FE3;
+    --bgColor:#BDB7E9;
+    --textColor: #EEECF7;
+    /* font-siza */
+    --header1Size:40px;
+    --header2Size:32px;
+    --header4Size:24px;
+    --pTextSiza:20px;
+    --smallText:16px;
+    --lineHeight:32px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    width: 100%;
+    background-color: var(--bgColor);
+    color: var(--textColor);
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+/* Header Navigation */
+header {
+    padding: 10px 20px;
+    border-bottom: 2px solid #d1c9e0;
+}
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-header h2 {
+    font-size: var(--header2Size);
+    font-weight: bold;
+    color:var(--textColor);
+}
+.nav-toggle {
+    background:none;
+    border: none;
+    font-size: var(--header2Size);
+    color: var(--iconColor);
+    cursor: pointer;
+    transition: all ease;
+}
+.nav-toggle:hover {
+    transform: rotate(360deg);
+}
+.links {
+    display: none;
+    flex-direction: row;
+    padding: 10px;
+}
+.display{
+    display: block;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 10px;
+    background: var(--artBtnColor);
+    border-radius: 5px;
+}
+.links li {
+    text-align: center;
+    margin: 5px 0;
+    
+}
+.links a {
+    color: var(--textColor);
+    font-size: var(--smallText);
+    font-weight: bolder;
+}
+.links a:hover{
+    text-decoration: underline;
+}
+main{
+    padding: 20px;
+}
+h1 {
+    font-size: var(--header1Size);
+    color:var(--textColor);
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+h4{
+    font-size: var(--header4Size);
+    color:var(--textColor);
+    text-transform:capitalize;
+    font-weight: normal;
+}
+p{
+    font-size: var(--smallText);;
+    color:var(--textColor);
+    margin: 10px auto;
+    width: 90%;
+}
+footer {
+    text-align: center;
+    align-items: end;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color:var(--textColor);
+}
+.social-icons i:hover{
+    background-color: var(--textColor);
+
+}
+@media (min-width: 850px){
+    .nav-toggle{
+        display: none;
+    }
+    .links{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .links a {
+        padding: 20px
+    }
+    #nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* when the togle opened and resize it still the same correct that  */
